@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/** Contenedor de las reseñas **/
+/****/
+
+.container {
+    display: flex;
+    flex-direction:row;
+    justify-content: center; flex-wrap: wrap;
+    margin: 20px; gap: 10px;
+
+}
+
+.card {
+    background-color: rgb(214, 242, 247); box-shadow: 0px 0px 5px 1px rgba(33, 53, 56, 0.11);
+    max-width: 300px; height: fit-content;
+    margin: 10px; padding: 10px; gap: 10px;
+    border-radius: 20px; border: none;
+    text-align: center;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.image {
+    max-width: 300px;
+    border-radius: 20px;
+}
+.res {
+    margin-top: 10px;
+    font-size: 14px; color: rgb(80, 80, 80);
+}
+
+.score {
+    margin-top: 10px;
+    color: rgba(128, 128, 128, 0.705);
+}
