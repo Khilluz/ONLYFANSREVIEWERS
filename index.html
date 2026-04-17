@@ -1,22 +1,80 @@
 <!DOCTYPE html>
-<html lang="es">
- <head>
- <meta charset="UTF-8">
- <title>Nombre del proyecto</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <section id="contacto" class="contacto-seccion">
+    <h2 class="contacto-titulo">Contacto</h2>
+    <form class="contacto-form">
+        <!-- Contacto -->
+        <div class="form-group">
+        <label for="nombre" class="form-label">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ingresa tu nombre completo" required>
+        </div>
 
- <!-- Google Fonts va acá — ANTES del link al CSS -->
-  
- <link rel="stylesheet" href="estilos.css">
- </head>
- <body>
+        <!-- Email -->
+        <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" name="email" class="form-control" placeholder="ejemplo@dominio.com" required>
+        </div>
 
- <!-- HEADER y NAV — Administrador -->
+        <!-- Telefono -->
+        <div class="form-group">
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="+54 9 11 1234 5678" required>
+        </div>
 
- <!-- SECCIÓN PRINCIPAL — Colaborador 1 -->
+        <!-- Contactar -->
+        <fieldset class="form-fieldset">
+         <legend class="form-legend">¿Cómo preferís que te contactemos?</legend>
+        <label for="contacto_email" class="radio-label">
+            <input type="radio" id="contacto_email" name="contacto_preferencia" value="email" class="radio-input" checked>
+             Email
+        </label>
+        <!-- Opciones -->
 
- <!-- SECCIÓN SECUNDARIA — Colaborador 2 -->
+        <label for="contacto_telefono" class="radio-label">
+            <input type="radio" id="contacto_telefono" name="contacto_preferencia" value="telefono" class="radio-input">
+            Teléfono
+        </label>
+        <label for="contacto_whatsapp" class="radio-label">
+            <input type="radio" id="contacto_whatsapp" name="contacto_preferencia" value="whatsapp" class="radio-input">
+            WhatsApp
+        </label>
+    </fieldset>
 
- <!-- FOOTER — acordar entre todos quién lo hace -->
+    <!-- Motivo del contacto-->
+    <div class="form-group">
+      <label for="motivo" class="form-label">Motivo del contacto</label>
+      <select id="motivo" name="motivo" class="form-control" required>
+        <option value="" disabled selected>Selecciona un motivo</option>
+        <option value="consulta">Consulta</option>
+        <option value="soporte">Soporte</option>
+        <option value="sugerencia">Sugerencia</option>
+      </select>
+    </div>
 
- </body>
+    <!-- Mensaje -->
+    <div class="form-group">
+      <label for="mensaje" class="form-label">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" class="form-control" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    </div>
+
+    <!-- Novedades -->
+    <div class="form-group form-checkbox">
+      <label for="novedades" class="checkbox-label">
+        <input type="checkbox" id="novedades" name="novedades" class="checkbox-input">
+        Acepto recibir novedades
+      </label>
+    </div>
+
+    <!-- BOTON SUBMIT-->
+    <button type="submit" class="btn btn-submit">Enviar</button>
+  </form>
+</section>
+</body>
 </html>

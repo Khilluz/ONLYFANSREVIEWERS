@@ -1,0 +1,102 @@
+/** Universal **/
+/****/
+* {
+    box-sizing: border-box;
+}
+
+/** Body **/
+/****/
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 20px;
+    background: #f7f7f7;
+}
+
+/** Contacto **/
+/****/
+.contacto-seccion {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.contacto-titulo {
+    margin-top: 0;
+    text-align: center;
+}
+
+.contacto-form > .form-group,
+.form-fieldset {
+    margin-bottom: 18px;
+}
+
+/** Formulario **/
+/****/
+.form-label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fbfbfb;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #7ae24a;
+    box-shadow: 0 0 0 3px rgba(142, 226, 74, 0.18);
+    background: #fff;
+}
+
+.form-fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 14px 16px;
+}
+
+.form-legend {
+    font-weight: 700;
+    padding: 0 6px;
+}
+
+.radio-label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 18px;
+    font-weight: 500;
+}
+
+.radio-input {
+    margin-right: 8px;
+}
+
+/** Sumbit **/
+/****/
+.btn-submit {
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #74de2e;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #57b91f;
+}
