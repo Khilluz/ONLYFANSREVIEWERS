@@ -1,7 +1,3 @@
-img{
-    margin: 50px, 20px;
-}
-
 body {
     margin: 0;
 }
@@ -69,19 +65,9 @@ body {
         font-weight: bold;
         font-size: 16px;
         cursor: pointer;
-         position: absolute;
         bottom: 65vh;
         right: 180vh;
         width: 12%;
-        height: auto;
-        max-height: 85vh;
-      }
-
-      img {
-        position: absolute;
-        bottom: 25vh;
-        right: 55vh;
-        width: 25%;
         height: auto;
         max-height: 85vh;
       }
