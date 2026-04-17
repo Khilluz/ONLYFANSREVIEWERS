@@ -1,3 +1,5 @@
+
+/*Header*/
  :root{
 
    --o:'Gotham Light';
@@ -107,4 +109,80 @@ gap: 0px;
     font-style: normal;
 }
 
+/*Seccion Principal*/
 
+body {
+    margin: 0;
+}
+
+.fondo {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://static4.depositphotos.com/1008371/357/i/450/depositphotos_3578659-stock-photo-large-crowd-of.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+    }
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        min-height: 100vh;
+        text-align: left;
+        padding: 40px;
+        color: #ffffff;
+        width: 100%;
+        position:relative
+
+      }
+
+
+      .hero h1 {
+        font-size: 48px;
+        margin-bottom: 16px;
+      }
+
+      .hero h2 {
+        font-size: 24px;
+        color: #CBD5E1;
+        max-width: 500px;
+        margin-bottom: 32px;
+      }
+
+      .boton {
+        padding: 16px 32px;
+        background-color: #3255be;
+        color: #FFFFFF;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        bottom: 65vh;
+        right: 180vh;
+        width: 12%;
+        height: auto;
+        max-height: 85vh;
+      }
+
+/*Seccion Secundaria*/
