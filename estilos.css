@@ -115,6 +115,11 @@ header.pene {
     margin: 10px;
     padding: 0 20px;
   }
+  
+  .pene .menu input[type=text] {
+    width: 100%;
+  }
+}
 
   /*Seccion Principal*/
 
@@ -191,6 +196,7 @@ body {
         height: auto;
         max-height: 85vh;
       }
+
 
 /*Seccion Secundaria*/
 
