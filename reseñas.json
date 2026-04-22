@@ -1,0 +1,28 @@
+{
+    "reseñas": [
+        {
+            "id": 1,
+            "name": "Raul",
+            "image": "id1.jpg",
+            "imageback": "back1.jpg",
+            "desc": "Este ventilador no está mal, tiene una buena velocidad de giro, y cuanta con 4 modos de velocidad.",
+            "score": "3.0/5.0"
+        },
+        {
+            "id": 2,
+            "name": "Fran",
+            "image": "id2.jpg",
+            "imageback": "back2.jpg",
+            "desc": "Este ventilador es un desastre. Larga aire caliente, tiene muy poca velocidad. Un desastre.",
+            "score": "1.0/5.0"
+        },
+        {
+            "id": 3,
+            "name": "Edagardo",
+            "image": "id3.jpg",
+            "imageback": "back3.jpg",
+            "desc": "Este ventilador es una !@$!-%#, la calidad del plastico es un desastre, tiene muy pocas velocidades.",
+            "score": "0.5/5.0"
+        }
+    ]
+}

@@ -7,6 +7,7 @@
  <!-- Google Fonts va acá — ANTES del link al CSS -->
   
  <link rel="stylesheet" href="estilos.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  </head>
  <body>
 
@@ -49,7 +50,49 @@
     </section>
  <!-- SECCIÓN SECUNDARIA — Colaborador 2 -->
 
- <!-- FOOTER — acordar entre todos quién lo hace -->
+ <!-- FOOTER — acordar entre todos quién lo hace MATEO Y VICTORIA -->
 
+    <script>
+
+        fetch('reseñas.json')
+            .then(res => res.json())
+            .then(data => { 
+                const contenedor = document.getElementById('container');
+                contenedor.className = 'container';
+
+                data.reseñas.forEach(rese => {
+                    const card = document.createElement('div');
+                    card.className ='card';
+
+                    // Nombre del usuario
+                    const name = document.createElement('h2');
+                    name.className = 'name';
+                    name.textContent = rese.name;
+
+                    // Imagen del ventilador
+
+                    const img = document.createElement('img');
+                    img.className = 'image';
+                    img.src = rese.image;
+
+                    // Reseña del usuario
+                    const desc = document.createElement('h3');
+                    desc.className = 'res';
+                    desc.textContent = rese.desc;
+
+                    // Score del usuario
+                    const sco = document.createElement('h3');
+                    sco.className = 'score';
+                    sco.textContent = rese.score;
+
+
+                    card.appendChild(img);
+                    card.appendChild(name);
+                    card.appendChild(desc);
+                    card.appendChild(sco);
+                    contenedor.appendChild(card);
+                })
+            })
+    </script>
  </body>
 </html>
