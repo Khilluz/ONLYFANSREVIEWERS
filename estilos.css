@@ -232,7 +232,8 @@ body {
 }
 
 .image {
-    max-width: 300px;
+    max-width: 280px;
+    width:fit-content;
     border-radius: 20px;
 }
 .res {
